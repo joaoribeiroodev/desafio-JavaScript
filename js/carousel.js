@@ -32,12 +32,12 @@ class Carousel {
 
                         // reseta o temporizador ao ser clicado
                         clearInterval(Carousel._interval);
-                        Carousel._interval = setInterval(function () { Carousel.Next(); }, 5000);
+                        Carousel._interval = setInterval(function () { Carousel.Next(); }, 3000);
                     });
                 });
 
                 Carousel.Render(); 
-                Carousel._interval = setInterval(function () { Carousel.Next(); }, 5000);
+                Carousel._interval = setInterval(function () { Carousel.Next(); }, 3000);
             }
         } else {
             throw "Method Start need a Array Variable.";
