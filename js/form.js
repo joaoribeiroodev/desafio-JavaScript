@@ -28,16 +28,23 @@ function Post(event, form) {
         form.elements.namedItem("contato").value
     );
 
-    Enviar(data.nome);
+    Enviar(data);
 
 }
 
-function Enviar() {
+function Enviar(data) {
 
-    const nome = document.getElementById("nomeid");
+    if (data.nome !== "") {
 
-    if (nome.value.trim() !== "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+        const mensagem =
+            `Obrigado sr(a) ${data.nome} ${data.sobrenome}!\n\n` +
+            `Seus dados foram encaminhados com sucesso:\n` +
+            `- Email: ${data.email}\n` +
+            `- CPF: ${data.cpf}\n` +
+            `- Telefone: ${data.telefone}\n` +
+            `- Contato preferencial: ${data.contato}`;
+
+        alert(mensagem);
     }
 
 }
