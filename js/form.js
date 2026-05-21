@@ -36,15 +36,17 @@ function Enviar(data) {
 
     if (data.nome !== "") {
 
-        const mensagem =
-            `Obrigado sr(a) ${data.nome} ${data.sobrenome}!\n\n` +
-            `Seus dados foram encaminhados com sucesso:\n` +
+        alert(`Obrigado sr(a) ${data.nome} ${data.sobrenome} seus dados foram encaminhados com sucesso!`);
+
+        const informacoes =
+            `- Nome: ${data.nome}\n` +
+            `- Sobrenome: ${data.sobrenome}\n` +
             `- Email: ${data.email}\n` +
             `- CPF: ${data.cpf}\n` +
             `- Telefone: ${data.telefone}\n` +
             `- Contato preferencial: ${data.contato}`;
 
-        alert(mensagem);
+        console.log(informacoes);
     }
 
 }
