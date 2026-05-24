@@ -38,15 +38,7 @@ function Enviar(data) {
 
         alert(`Obrigado sr(a) ${data.nome} ${data.sobrenome} seus dados foram encaminhados com sucesso!`);
 
-        const informacoes =
-            `- Nome: ${data.nome}\n` +
-            `- Sobrenome: ${data.sobrenome}\n` +
-            `- Email: ${data.email}\n` +
-            `- CPF: ${data.cpf}\n` +
-            `- Telefone: ${data.telefone}\n` +
-            `- Contato preferencial: ${data.contato}`;
-
-        console.log(informacoes);
+        console.log(data);
     }
 
 }
