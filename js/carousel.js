@@ -36,7 +36,7 @@ class Carousel {
                     });
                 });
 
-                Carousel.Render(); 
+                Carousel.Render();
                 Carousel._interval = setInterval(function () { Carousel.Next(); }, 3000);
             }
         } else {
@@ -50,16 +50,14 @@ class Carousel {
         if (Carousel._sequence >= Carousel._size) {
             Carousel._sequence = 0;
         }
-        Carousel.Render(); 
+        Carousel.Render();
     }
 
     static Render() {
         const carouselAtual = Carousel._itens[Carousel._sequence];
 
         Carousel._ImagemCarousel.innerHTML = `
-        <a href="${carouselAtual._link}">
             <img src="img/${carouselAtual._imagem}" alt="${carouselAtual._titulo}" class="fade-in">
-        </a>
         `;
 
         Carousel._TituloCarousel.innerHTML = `
