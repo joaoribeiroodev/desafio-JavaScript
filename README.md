@@ -21,7 +21,6 @@ Um website interativo de apresentação de veículos da marca Ford, desenvolvido
 - **CSS 3** - Estilização, layout flexível e animações
 - **JavaScript ES6+** - Manipulação do DOM com classes e métodos estáticos
 - **Intl API** - Formatação de números e moedas (localização pt-BR)
-- **[Insira aqui tecnologias adicionais de build/deploy, se houver]**
 
 ---
 
@@ -152,6 +151,6 @@ GitHub: [@joaoribeiroodev](https://github.com/joaoribeiroodev)
 
 ## 📅 Informações do Projeto
 
-- **Criado em:** [Insira aqui a data de criação]
+- **Criado em:** 17 de maio de 2026
 - **Última atualização:** 25 de maio de 2026
 - **Tipo:** Desafio de Aprendizado em JavaScript
